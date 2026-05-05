@@ -38,7 +38,8 @@ let person2 = {
     name: 'Tony',
     age: 34,
     gender: 'male',
-    hobbies: ['football', 'singer']
+    hobbies: ['football', 'singer'],
+    sayHello: function() { return "Hello World!"} //Method
 }
 
 let {name, gender, ...otherDetails} = person2
@@ -46,5 +47,6 @@ let {name, gender, ...otherDetails} = person2
 console.log(name, gender, otherDetails)
 
 
-
+hello = person2.sayHello()
+console.log(hello)
 
